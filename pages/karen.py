@@ -27,7 +27,7 @@ load_dotenv()
 # === CLUSTERING FUNCTION ===
 @st.cache_data
 def load_and_cluster_data():
-    df = pd.read_csv('/Users/vaswatihazarika/Desktop/walkmate/one/data/apple_watch_steps.csv', parse_dates=['date'], index_col='date')
+    df = pd.read_csv('data/apple_watch_steps.csv', parse_dates=['date'], index_col='date')
     df = df.sort_index()
 
     # Fill missing dates
